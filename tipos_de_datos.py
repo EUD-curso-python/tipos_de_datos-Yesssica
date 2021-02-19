@@ -107,7 +107,7 @@ apellidos_list2.reverse()
 variable `apellidos_list`, y crear variable `apellidos_set2` con elementos del 
 62 al 76 de la variable `apellidos_list`.
 """
-apellidos_set1 =set(apellidos_list[56:67])
+apellidos_set1 = set(apellidos_list[56:67])
 apellidos_set2 = set(apellidos_list[62:77])
 
 """Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
