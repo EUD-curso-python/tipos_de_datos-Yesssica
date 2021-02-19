@@ -113,16 +113,16 @@ apellidos_set2 = set(apellidos_list[62:77])
 """Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
 variable `apellidos_list`.
 """
-#apellidos_set1.add(apellidos_list[67])
+apellidos_set1.add(apellidos_list[67])
 
 """Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
 variable `apellidos_list`.
 """
-
+apellidos_set1.add(tuple(apellidos_list[68:71]))
 
 """Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
 """
-#apellidos_set1.remove(' CAMPOS  ')
+apellidos_set1.remove(' CAMPOS  ')
 
 """Crear la variable `apellidos_set3` con la intersección entre `apellidos_set1` 
 y `apellidos_set2`.
@@ -147,35 +147,35 @@ y `apellidos_set2`.
 """Crear la variable `var3` con la respuesta a la pregunta de si `apellidos_set3` 
 es un subconjunto de `apellidos_set1`.
 """
-#var3 = apellidos_set3.issubset(apellidos_set1)
+#var3 = apellidos_set1.issuperset(apellidos_set3)
 
 """Crear la variable `apellidos_dict` usando la función `fromkeys` con la lista
 del 0 al 4 de la lista `apellidos_lista`.
 """
-#apellidos_dict = dict.fromkeys(apellidos_list[0:4])
+apellidos_dict = dict.fromkeys(apellidos_list[0:5])
 
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
 `apellidos_dict`.
 """
-#apellidos_dict.update(("key1" = 12, "key2" = 24))
+apellidos_dict.update({"key1": 12, "key2": 24})
 
 """Asignar el valor del entero `34` a la llave "gonzalez" en el diccionario 
 `apellidos_dict`.
 """
-#apellidos_dict['gonzalez']=34
+apellidos_dict["gonzalez"] = 34
 
 """Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_gonzalez`.
 """
-#apellido_gonzalez = apellidos_dict.pop('gonzalez')
+apellido_gonzalez = apellidos_dict.pop('gonzalez')
 
 """Eliminar el último elemento del diccionario `apellidos_dict`.
 """
-#apellidos_dict.popitem()
+apellidos_dict.popitem()
 #print(apellidos_dict)
 
 """Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_none`.
 """
-#apellido_none =apellidos_dict.pop('no_existe',None)
+apellido_none =apellidos_dict.pop('no_existe',None)
 
